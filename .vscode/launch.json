@@ -1,0 +1,148 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-App<LearningJava_4c6c90d4>",
+            "request": "launch",
+            "mainClass": "App",
+            "projectName": "LearningJava_4c6c90d4"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Main<LearningJava_4c6c90d4>",
+            "request": "launch",
+            "vmArgs": "--module-path \"C:\\Program Files\\Java\\javafx-sdk-11.0.2\\lib\" --add-modules=javafx.controls",
+            "mainClass": "FinalProject.Main",
+            "projectName": "LearningJava_4c6c90d4"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-SnakeGameMain<LearningJava_4c6c90d4>",
+            "request": "launch",
+            "mainClass": "FinalProjectTrails.SnakeGameMain",
+            "projectName": "LearningJava_4c6c90d4"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Fileio<LearningJava_4c6c90d4>",
+            "request": "launch",
+            "mainClass": "ModuleEight.Fileio",
+            "projectName": "LearningJava_4c6c90d4"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Xmling<LearningJava_4c6c90d4>",
+            "request": "launch",
+            "mainClass": "ModuleNine.Xmling",
+            "projectName": "LearningJava_4c6c90d4"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-BowlingCollection<LearningJava_4c6c90d4>",
+            "request": "launch",
+            "mainClass": "ModuleOneToSix.BowlingCollection",
+            "projectName": "LearningJava_4c6c90d4"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-CashRegisterApp<LearningJava_4c6c90d4>",
+            "request": "launch",
+            "mainClass": "ModuleOneToSix.CashRegisterApp",
+            "projectName": "LearningJava_4c6c90d4"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-FirstClass<LearningJava_4c6c90d4>",
+            "request": "launch",
+            "mainClass": "ModuleOneToSix.FirstClass",
+            "projectName": "LearningJava_4c6c90d4"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ParkingGarage<LearningJava_4c6c90d4>",
+            "request": "launch",
+            "mainClass": "ModuleOneToSix.ParkingGarage",
+            "projectName": "LearningJava_4c6c90d4"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-StringReverser<LearningJava_4c6c90d4>",
+            "request": "launch",
+            "mainClass": "ModuleOneToSix.StringReverser",
+            "projectName": "LearningJava_4c6c90d4"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-StringSorter<LearningJava_4c6c90d4>",
+            "request": "launch",
+            "mainClass": "ModuleOneToSix.StringSorter",
+            "projectName": "LearningJava_4c6c90d4"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-CharStack<LearningJava_4c6c90d4>",
+            "request": "launch",
+            "mainClass": "ModuleSeven.CharStack",
+            "projectName": "LearningJava_4c6c90d4"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-InflatableBalloon<LearningJava_4c6c90d4>",
+            "request": "launch",
+            "mainClass": "ModuleSeven.InflatableBalloon",
+            "projectName": "LearningJava_4c6c90d4"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Threader<LearningJava_4c6c90d4>",
+            "request": "launch",
+            "mainClass": "ModuleSeven.Threader",
+            "projectName": "LearningJava_4c6c90d4"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Threader1<LearningJava_4c6c90d4>",
+            "request": "launch",
+            "mainClass": "ModuleSeven.Threader1",
+            "projectName": "LearningJava_4c6c90d4"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Threader2<LearningJava_4c6c90d4>",
+            "request": "launch",
+            "mainClass": "ModuleSeven.Threader2",
+            "projectName": "LearningJava_4c6c90d4"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Threader3<LearningJava_4c6c90d4>",
+            "request": "launch",
+            "mainClass": "ModuleSeven.Threader3",
+            "projectName": "LearningJava_4c6c90d4"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Threader4<LearningJava_4c6c90d4>",
+            "request": "launch",
+            "mainClass": "ModuleSeven.Threader4",
+            "projectName": "LearningJava_4c6c90d4"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ThreaderExample<LearningJava_4c6c90d4>",
+            "request": "launch",
+            "mainClass": "ModuleSeven.ThreaderExample",
+            "projectName": "LearningJava_4c6c90d4"
+        }
+    ]
+}
