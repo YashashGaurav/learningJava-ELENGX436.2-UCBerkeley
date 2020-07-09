@@ -17,6 +17,11 @@ public class Main extends Application {
     private GameArena gameArena;
     private GraphicsContext graphicsContext;
 
+    /**
+     * This is where the magic begins - Application's psvm
+     * 
+     * @param args string launch arguments - no expectations
+     */
     public static void main(String[] args) {
         Application.launch(args);
     }

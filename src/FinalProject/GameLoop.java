@@ -30,6 +30,9 @@ public class GameLoop implements Runnable {
     }
 
     @Override
+    /**
+     * Runnable's run method
+     */
     public void run() {
         while (running && !paused) {
             // Time the update and paint calls
@@ -57,34 +60,62 @@ public class GameLoop implements Runnable {
         }
     }
 
+    /**
+     * stops the Game Loop
+     */
     public void stop() {
         running = false;
     }
 
+    /**
+     * @return if any key is pressed
+     */
     public boolean isKeyPressed() {
         return isKeyPressed;
     }
 
+    /**
+     * Sets KeyPressed state state tracker to true
+     */
     public void setIsKeyPressed() {
         isKeyPressed = true;
     }
 
+    /**
+     * Resumes a paused game.
+     */
     public void resume() {
         paused = false;
     }
 
+    /**
+     * Pauses the game.
+     */
     public void pause() {
         paused = true;
     }
 
+    /**
+     * @return If the game is paused.
+     */
     public boolean isPaused() {
         return paused;
     }
 
+    /**
+     * Exposes the frameRate of the game loop
+     * 
+     * @return Frame Rate
+     */
     public int getFrameRate() {
         return frameRate;
     }
 
+    /**
+     * Set a different frame rate
+     * 
+     * @param frameRate Frame rate to set to.
+     */
     public void setFrameRate(int frameRate) {
         this.frameRate = frameRate;
     }

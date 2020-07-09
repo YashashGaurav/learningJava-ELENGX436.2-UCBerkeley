@@ -6,13 +6,14 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class Snake {
+
     public static final Color COLOR = Color.rgb(80, 118, 249);
     public static final Color DEAD = Color.BLACK;
     public static final int DEFAULT_INITIAL_SIZE = 8;
 
     private GameArena gameArena;
     private int length;
-    private boolean safe;
+    private boolean isSafe;
     private List<Coordinates> allCoordinates;
     private Coordinates headCoordinates;
     private int xVelocity;
@@ -31,19 +32,19 @@ public class Snake {
     }
 
     private void setSnake(Coordinates initialHeadCoordinates) {
-        allCoordinates = new LinkedList<>();
-        headCoordinates = new Coordinates(initialHeadCoordinates.getX() - DEFAULT_INITIAL_SIZE,
+        this.allCoordinates = new LinkedList<>();
+        this.headCoordinates = new Coordinates(initialHeadCoordinates.getX() - DEFAULT_INITIAL_SIZE,
                 initialHeadCoordinates.getY());
-        allCoordinates.add(headCoordinates);
+        this.allCoordinates.add(headCoordinates);
 
-        length = 1;
+        this.length = 1;
         for (int i = 1; i < DEFAULT_INITIAL_SIZE; i++) {
-            growTo(headCoordinates.translate(1, 0));
+            growTo(this.headCoordinates.translate(1, 0));
         }
 
-        safe = true;
-        xVelocity = 0;
-        yVelocity = 0;
+        this.isSafe = true;
+        this.xVelocity = 0;
+        this.yVelocity = 0;
     }
 
     /**
@@ -62,7 +63,7 @@ public class Snake {
      * Called during every update. It gets rid of the oldest coordinates and adds
      * the given position.
      *
-     * @param coordinates The new Point to add.
+     * @param coordinates The new pixel coordinates to add.
      */
     private void shiftTo(Coordinates coordinates) {
         // The head goes to the new location
@@ -78,7 +79,7 @@ public class Snake {
      */
     private void checkAndAdd(Coordinates coordinates) {
         coordinates = wrap(coordinates);
-        safe &= !allCoordinates.contains(coordinates);
+        isSafe &= !allCoordinates.contains(coordinates);
         allCoordinates.add(coordinates);
         headCoordinates = coordinates;
     }
@@ -115,7 +116,7 @@ public class Snake {
      * @return {@code true} if the Snake hasn't run into itself yet.
      */
     public boolean isSafe() {
-        return safe || length == 1;
+        return isSafe || length == DEFAULT_INITIAL_SIZE;
     }
 
     /**
@@ -150,6 +151,9 @@ public class Snake {
         }
     }
 
+    /**
+     * Sets snakes direction to UP
+     */
     public void setDirectionUp() {
         if (yVelocity == 1 && length > 1)
             return;
@@ -157,6 +161,9 @@ public class Snake {
         yVelocity = -1;
     }
 
+    /**
+     * Sets snakes direction to DOWN
+     */
     public void setDirectionDown() {
         if (yVelocity == -1 && length > 1)
             return;
@@ -164,6 +171,9 @@ public class Snake {
         yVelocity = 1;
     }
 
+    /**
+     * Sets snakes direction to LEFT
+     */
     public void setDirectionLeft() {
         if (xVelocity == 1 && length > 1)
             return;
@@ -171,6 +181,9 @@ public class Snake {
         yVelocity = 0;
     }
 
+    /**
+     * Sets snakes direction to RIGHT
+     */
     public void setDirectionRight() {
         if (xVelocity == -1 && length > 1)
             return;
@@ -178,6 +191,9 @@ public class Snake {
         yVelocity = 0;
     }
 
+    /**
+     * @return length difference since game started * 100
+     */
     public int getGrowthScore() {
         return (length - DEFAULT_INITIAL_SIZE) * 100;
     }

@@ -7,7 +7,7 @@ This is a repo of all the code that I wrote for the Java Course that I underwent
 This is a single project, that has the following modules:
 
 1. ModuleOneToSix - Has all the java files that I created for Modules 1 though 6
-2. ModuleSeven - 3 main java files ChatStack.java, InflatableBalloon.java and Threader.java. Other Threader files are experimental and .
+2. ModuleSeven - 3 main java files ChatStack.java, InflatableBalloon.java and Threader.java. Other Threader files are experimental. The Thread management coding assignment was particularly challenging given the all the thread count requirement. Good Learning! 
 3. ModuleEight - FileIO with sampleFile
 4. ModuleNine - Xmling with DTD and two dvd.xml sample files.
 5. FinalProject - I create a Snake game! Heavily inspired from this [CodeReview](https://codereview.stackexchange.com/questions/151800/snake-in-javafx/151845#151845?newreg=25450db81cb24bb489f04fdb0e53f36a)
