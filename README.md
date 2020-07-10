@@ -1,6 +1,6 @@
 ## Java: Discovering Its Power - EL ENG X436.2
 
-This is a repo of all the code that I wrote for the Java Course that I underwent at UBC Extension for one of my pre-requisites for Heinz College at CMU.
+This is a repo of all the code - not really, I removed some of the nasty trial code just to try keep things clean -  that I wrote for the Java Course that I underwent at UBC Extension for one of my pre-requisites for Heinz College at CMU.
 
 ## Project Structure
 
